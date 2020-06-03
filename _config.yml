@@ -1,7 +1,7 @@
 # Site settings
 title:          Mukul Kumar
 description:    "My personal webspace"
-baseurl:        "about.mukulnotes.me"
+baseurl:        
 url:            "https://mukulkumar22.github.io"
 
 # Google Analytics
