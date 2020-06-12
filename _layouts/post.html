@@ -2,12 +2,14 @@
 layout: default
 ---
 
+<meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
 <div class="post">
   <div class="post-info">
 
   	<br> 
    
       <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+
     
   </div>
 
@@ -30,5 +32,4 @@ layout: default
   {% endif %}
 
   <a href="#" class="top">Top</a>
-  {% include advertisements.html %}
 </div>
