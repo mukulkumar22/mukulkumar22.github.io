@@ -2,7 +2,7 @@
 layout: misc
 title: "Miscellaneous"
 author: "Mukul"
-permalink: /misc/
+permalink: /projects/
 ---
 
 
