@@ -68,6 +68,15 @@
 
     const io = new IntersectionObserver(
       (entries) => {
+        // If we're at the bottom of the page, force the last section active.
+        // This handles short last sections that never reach the trigger band.
+        const atBottom =
+          window.innerHeight + window.scrollY >= document.body.offsetHeight - 4;
+        if (atBottom) {
+          setActive(sectionMap[sectionMap.length - 1].hash);
+          return;
+        }
+
         const visible = entries
           .filter((e) => e.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
@@ -80,5 +89,12 @@
     );
 
     sectionMap.forEach(({ section }) => io.observe(section));
+
+    // Also listen to scroll for the bottom-of-page edge case
+    window.addEventListener("scroll", () => {
+      const atBottom =
+        window.innerHeight + window.scrollY >= document.body.offsetHeight - 4;
+      if (atBottom) setActive(sectionMap[sectionMap.length - 1].hash);
+    }, { passive: true });
   }
 })();
