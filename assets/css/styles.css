@@ -118,7 +118,9 @@ a:hover {
   align-self: start;
   max-height: 100vh;
   overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
 }
+.sidebar::-webkit-scrollbar { display: none; } /* Chrome/Safari */
 
 .sidebar-inner {
   display: flex;
@@ -247,19 +249,22 @@ a:hover {
 .sidebar-links li:hover .ico { color: var(--fg); }
 
 .theme-toggle {
-  margin-top: 1rem;
-  align-self: flex-start;
-  background: transparent;
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 50;
+  background: var(--bg);
   border: 1px solid var(--rule-strong);
   color: var(--fg-muted);
-  width: 34px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
   padding: 0;
   border-radius: 50%;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: color var(--t-fast), border-color var(--t-fast),
     background var(--t-fast), transform var(--t-fast);
 }
