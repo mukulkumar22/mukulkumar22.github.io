@@ -38,7 +38,6 @@ nav_active: about
     <li class="entry">
       <div class="entry-head">
         <h3>{% if proj.links.first %}<a href="{{ proj.links.first.url }}" rel="noopener">{{ proj.title }}</a>{% else %}{{ proj.title }}{% endif %}</h3>
-        <span class="entry-year">{{ proj.year }}</span>
       </div>
       <p>{{ proj.description }}</p>
       {% if proj.links.size > 0 %}

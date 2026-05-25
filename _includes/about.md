@@ -1,7 +1,8 @@
 I'm an applied AI researcher/engineer, currently at
-[AI71](https://ai71.ai) in Abu Dhabi. My work there centers on LLM agent
-systems for enterprise: reasoning architectures, evaluation frameworks, and
-making them fast and cheap enough to ship.
+[AI71](https://ai71.ai) in Abu Dhabi. My work here centers on LLM agent
+systems for enterprise: agent orchestration, making them production-ready,
+and evaluation frameworks. Recently I've also started working on
+voice-based use cases.
 
 Before this, I spent nearly four years at
 [Wadhwani AI](https://www.wadhwaniai.org) in Delhi, building AI for public
