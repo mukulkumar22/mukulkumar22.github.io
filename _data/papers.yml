@@ -1,0 +1,23 @@
+- title: "Evaluating Robustness in LLM-based Medical Chatbots"
+  authors: "<strong>Mukul Kumar</strong>, Alugubelli Dinesh Reddy, Sai Nikhilesh Reddy"
+  venue: "2nd HEAL Workshop at CHI Conference on Human Factors in Computing Systems"
+  year: 2025
+  links:
+    - label: pdf
+      url: "https://heal-workshop.github.io/chi2025_papers/52_Evaluating_Robustness_in_LL.pdf"
+
+- title: "Artificial Intelligence for Advancing Eye Care in Resource-Poor Settings: Assessing the Predictive Accuracy of an AI-Model for Diabetic Retinopathy Screening in India"
+  authors: "Rohan Chawla, Prachi Karkhanis, Malay Shah, Aritra Das, Rishabh Sharma, Dhwani Almaula, Pradeep Venkatesh, Harsh Vardhan Singh, <strong>Mukul Kumar</strong>, Ramanuj Samanta, Vinod Kumar, Amar Shah, Bhavin Vadera, Nakul Jain, Akanksha Sen, Shyamsundar Shreedhar, Vipin Garg, Soma Dhavala, Kowshik Ganesh, Srinivas Rana, Radhika Tandon"
+  venue: "Global Epidemiology"
+  year: 2025
+  links:
+    - label: paper
+      url: "https://www.sciencedirect.com/science/article/pii/S2590113325000276"
+
+- title: "Automatic Interpretation of Line Probe Assay Test for Tuberculosis"
+  authors: "Jatin Agrawal, <strong>Mukul Kumar</strong>, Avtansh Tiwari, Sachin Danisetty, Soma Dhavala, Nakul Jain, Prasaanth Balraj, Niket Singh, Siddhant Shingi, Jayakrishna Kurada, Raghuram Rao, S Anand, Nishant Kumar"
+  venue: "Proceedings of the AAAI Conference on Artificial Intelligence"
+  year: 2024
+  links:
+    - label: paper
+      url: "https://ojs.aaai.org/index.php/AAAI/article/view/30191"

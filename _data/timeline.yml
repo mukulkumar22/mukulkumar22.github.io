@@ -1,0 +1,49 @@
+- date: Now
+  title: Senior ML Engineer at AI71
+  description: Building AI agents for enterprise in Abu Dhabi.
+  highlight: now
+
+- date: "Nov 2025"
+  title: Attended EMNLP 2025 in Suzhou, China
+  description: My first visit to China. Loved the food and the country.
+  highlight: true
+
+- date: "Apr 2025"
+  title: Presented at a workshop at CHI 2025 in Yokohama, Japan
+  description: Presented our paper on LLM robustness in medical chatbots at an ACM CHI workshop. Also got to visit Japan.
+  highlight: true
+
+- date: "Mar 2025"
+  title: Moved away from home for the first time
+  description: Relocated to Abu Dhabi to join AI71.
+  highlight: true
+
+- date: "2024"
+  title: Spoke at ACM COMPASS
+  description: Presented on AI for healthcare delivery in India at the Research-to-Impact Collaborative.
+
+- date: "Feb 2024"
+  title: Presented at AAAI 2024 in Vancouver, Canada
+  description: My first international trip and first major AI conference. Presented our paper on automated TB diagnostics at the main conference (AI for Social Impact track).
+  highlight: true
+
+- date: "Aug 2021"
+  title: Joined full-time at Wadhwani AI
+  description: Joined as an Associate ML Scientist. Started working on a project to automate Line Probe Assay (LPA) tests for TB diagnostics in India.
+
+- date: "2021"
+  title: Graduated from IIIT Delhi
+  description: >-
+    B.Tech at the intersection of Computer Science, Economics, and Sociology.
+
+- date: "2020"
+  title: Interned at Wadhwani AI
+  description: Worked on AI and data science solutions to predict non-adherence in TB patients. Got motivated by the mission and the people I worked with. Received a pre-placement offer.
+
+- date: "2019"
+  title: Worked with TCPD, a research group at Ashoka University
+  description: My first 'employment', where I earned my first paycheck. Used OCR and text extraction methods to pull information from decade-old documents and build a legislator profile database.
+
+- date: "2017"
+  title: Started college at IIIT Delhi
+  description: Studied a unique course at the intersection of Computer Science, Economics, and Sociology. The place where I got motivated to build AI for real-world problems.

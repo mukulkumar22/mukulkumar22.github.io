@@ -1,0 +1,48 @@
+- title: "Ask: AI Assistant for Enterprise"
+  year: 2025
+  description: >-
+    ReAct-based LLM agent system at AI71 with structured reasoning, dynamic tool
+    orchestration, prompt and KV caching (18-35% TTFT reduction), and a full
+    evaluation framework with MLflow tracking and CI/CD integration.
+  links:
+    - label: ASK71
+      url: "https://ai71.ai/assets/images/products/ask_.pdf"
+
+- title: AI Chatbot for Frontline Healthcare Workers
+  year: 2024
+  description: >-
+    LLM-based assistant helping frontline health workers in India with clinical
+    queries. 83% acceptance rate from domain experts. Reduced per-query cost 5-6x
+    with synthetic data and caching. Built with the Ministry of Health, supported
+    by USAID and the Gates Foundation.
+  links:
+    - label: HealthVaani
+      url: "https://www.wadhwaniai.org/impact/healthcare-solutions/healthvaani/"
+
+- title: Automated TB Diagnostics (Line Probe Assay)
+  year: 2024
+  description: >-
+    Object detection system using DETR to read Line Probe Assay strips for
+    Drug-Resistant TB, achieving >96% band accuracy. Designed a ground truth
+    study with 9 expert microbiologists. Paper at AAAI 2024.
+  links:
+    - label: Paper
+      url: "https://ojs.aaai.org/index.php/AAAI/article/view/30191"
+
+- title: Clinical Decision Support System (CDSS)
+  year: 2023
+  description: >-
+    ML system for India's national telemedicine platform, helping doctors identify
+    the right diagnosis across 31 diseases. Served 122M+ consultations. Semi-finalist
+    at MIT Solve Challenge 2023.
+  links:
+    - label: MIT Solve
+      url: "https://solve.mit.edu/challenges/heath-in-fragile-contexts-challenge/solutions/75300"
+
+- title: Corneal Transplant Outcome Prediction
+  year: 2023
+  description: >-
+    AI suite predicting future visual scores and patient drop-off to improve
+    cornea management and surgery outcomes. Led the project end-to-end, including
+    product, stakeholder management, fundraising, and ML.
+  links: []

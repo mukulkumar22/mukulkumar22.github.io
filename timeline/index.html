@@ -1,0 +1,30 @@
+---
+layout: default
+title: Timeline
+nav_active: timeline
+permalink: /timeline/
+---
+
+<section class="block">
+  <h1>Timeline</h1>
+  <p class="block-lede">
+    The milestones, moves, and turning points, roughly in order.
+  </p>
+
+  <ol class="full-timeline">
+    {% for item in site.data.timeline %}
+    <li class="tl-item{% if item.highlight == 'now' %} tl-now{% elsif item.highlight %} tl-highlight{% endif %}">
+      <div class="tl-dot"></div>
+      <div class="tl-date">{{ item.date }}</div>
+      <div class="tl-body">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+
+  <p class="tl-note">
+    Last updated <time datetime="2026-05-25">May 2026</time>.
+  </p>
+</section>

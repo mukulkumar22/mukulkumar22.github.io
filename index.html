@@ -1,0 +1,105 @@
+---
+layout: default
+title: ~
+nav_active: about
+---
+
+<section id="about" class="block block-intro">
+  {% capture about_md %}{% include about.md %}{% endcapture %}
+  {{ about_md | markdownify }}
+</section>
+
+<section id="experience" class="block">
+  <h2>Experience</h2>
+  <p class="block-lede">Where I've worked, in reverse chronological order.</p>
+
+  <ol class="timeline">
+    {% for item in site.data.experience %}
+    <li class="timeline-item">
+      <div class="timeline-when">
+        <span class="role">{{ item.role }}</span>
+        <span class="when">{{ item.when }}</span>
+      </div>
+      <div class="timeline-what">
+        <h3>{% if item.url %}<a href="{{ item.url }}" rel="noopener">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}</h3>
+        <p>{{ item.description }}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section id="projects" class="block">
+  <h2>Projects</h2>
+  <p class="block-lede">Selected things I've built.</p>
+
+  <ul class="entry-list">
+    {% for proj in site.data.projects %}
+    <li class="entry">
+      <div class="entry-head">
+        <h3>{% if proj.links.first %}<a href="{{ proj.links.first.url }}" rel="noopener">{{ proj.title }}</a>{% else %}{{ proj.title }}{% endif %}</h3>
+        <span class="entry-year">{{ proj.year }}</span>
+      </div>
+      <p>{{ proj.description }}</p>
+      {% if proj.links.size > 0 %}
+      <p class="entry-links">
+        {% for link in proj.links %}{% if forloop.index > 1 %} · {% endif %}<a href="{{ link.url }}" rel="noopener">{{ link.label }}</a>{% endfor %}
+      </p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="papers" class="block">
+  <h2>Publications</h2>
+  <ol class="paper-list">
+    {% for paper in site.data.papers %}
+    <li class="paper">
+      <p class="paper-title">
+        {% if paper.links.first %}<a href="{{ paper.links.first.url }}" rel="noopener">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}
+      </p>
+      <p class="paper-meta">
+        {{ paper.authors }}.
+        <em>{{ paper.venue }}</em>, {{ paper.year }}.
+        {% for link in paper.links %}[<a href="{{ link.url }}" rel="noopener">{{ link.label }}</a>] {% endfor %}
+      </p>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section id="engagements" class="block">
+  <h2>Beyond the desk</h2>
+  <p class="block-lede">A few things I've done outside of my core work.</p>
+
+  <ol class="timeline">
+    {% for item in site.data.engagements %}
+    <li class="timeline-item">
+      <div class="timeline-when">
+        <span class="role">{{ item.role }}</span>
+        <span class="when">{{ item.when }}</span>
+      </div>
+      <div class="timeline-what">
+        <h3>{{ item.title }}</h3>
+        <p>
+          {{ item.description }}
+          {% if item.links %}
+          {% for link in item.links %}[<a href="{{ link.url }}" rel="noopener">{{ link.label }}</a>] {% endfor %}
+          {% endif %}
+        </p>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section id="contact" class="block">
+  <h2>Contact</h2>
+  <p>
+    Email is the best way to reach me at
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>, though
+    <a href="https://www.linkedin.com/in/mukulkumar07/" rel="noopener">LinkedIn</a>
+    works too. I read everything and reply to most.
+  </p>
+</section>

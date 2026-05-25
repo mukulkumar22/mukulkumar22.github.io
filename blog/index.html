@@ -1,0 +1,36 @@
+---
+layout: default
+title: Blog
+nav_active: blog
+permalink: /blog/
+---
+
+<section class="block">
+  <h1>Blog</h1>
+  <p class="block-lede">
+    Essays, notes, and half-formed thoughts.
+  </p>
+
+  {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+
+  {% for year_group in posts_by_year %}
+  <div class="year-group">
+    <h3 class="year-heading">{{ year_group.name }}</h3>
+    <ul class="post-index">
+      {% for post in year_group.items %}
+      <li>
+        <a href="{{ post.url | relative_url }}">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" }}</time>
+          <span class="post-index-title">{{ post.title }}</span>
+        </a>
+        {% if post.excerpt %}<p class="post-index-excerpt">{{ post.excerpt | strip_html | truncatewords: 32 }}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+
+  {% if site.posts.size == 0 %}
+  <p class="empty">No posts yet. Soon.</p>
+  {% endif %}
+</section>

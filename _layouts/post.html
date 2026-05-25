@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% assign words = content | number_of_words %}
+      {% assign minutes = words | divided_by: 200 | plus: 1 %}
+      <span class="sep">·</span>
+      <span>{{ minutes }} min read</span>
+      {% if page.tags and page.tags.size > 0 %}
+      <span class="sep">·</span>
+      <span class="post-tags">
+        {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% unless forloop.last %} {% endunless %}{% endfor %}
+      </span>
+      {% endif %}
+    </p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="post-subtitle">{{ page.subtitle }}</p>{% endif %}
+  </header>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    {% assign posts = site.posts %}
+    {% assign found_index = -1 %}
+    {% for p in posts %}
+      {% if p.url == page.url %}{% assign found_index = forloop.index0 %}{% endif %}
+    {% endfor %}
+    {% assign prev_index = found_index | plus: 1 %}
+    {% assign next_index = found_index | minus: 1 %}
+    {% assign prev = posts[prev_index] %}
+    {% assign next = posts[next_index] %}
+
+    <nav class="post-nav" aria-label="Post navigation">
+      {% if prev %}
+      <a class="post-nav-prev" href="{{ prev.url | relative_url }}">
+        <span class="label">← Previous</span>
+        <span class="title">{{ prev.title }}</span>
+      </a>
+      {% else %}<span></span>{% endif %}
+
+      {% if next %}
+      <a class="post-nav-next" href="{{ next.url | relative_url }}">
+        <span class="label">Next →</span>
+        <span class="title">{{ next.title }}</span>
+      </a>
+      {% else %}<span></span>{% endif %}
+    </nav>
+
+    <p class="post-back">
+      <a href="{{ '/blog/' | relative_url }}">← All posts</a>
+    </p>
+  </footer>
+</article>

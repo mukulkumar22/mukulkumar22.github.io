@@ -1,0 +1,38 @@
+title: Mukul Kumar
+author: Mukul Kumar
+email: muk137kumar@gmail.com
+description: >-
+  Personal site of Mukul Kumar — engineer, researcher, writer.
+url: "https://mukulkumar22.github.io"
+baseurl: ""
+
+permalink: /blog/:slug/
+
+theme: null
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - README.md
+  - .DS_Store
+

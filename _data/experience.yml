@@ -1,0 +1,49 @@
+- role: Senior ML Engineer
+  when: "Mar 2025 to present"
+  company: AI71
+  url: "https://ai71.ai"
+  description: >-
+    Building AI agents for enterprise. Architected the transition from static
+    RAG to ReAct-based LLM agents using LangGraph. Designed evaluation frameworks,
+    optimized inference costs by 3x, and benchmarked frontier models for reasoning.
+
+- role: Associate ML Scientist II
+  when: "Aug 2021 to Mar 2025"
+  company: Wadhwani AI
+  url: "https://www.wadhwaniai.org"
+  description: >-
+    Built AI systems for public health at scale, including an LLM chatbot for
+    frontline healthcare workers, automated TB diagnostics (AAAI 2024), and a
+    clinical decision support system serving 122M+ consultations. Partnered with
+    the Indian government, USAID, and the Gates Foundation.
+
+- role: Teaching Assistant, Econometrics
+  when: "Jan to May 2021"
+  company: IIIT Delhi
+  url: "https://iiitd.ac.in"
+  description: >-
+    Assisted Dr Gaurav Arora with the Econometrics II course. Created data
+    assignments in R and evaluated quizzes and exams.
+
+- role: Research Intern
+  when: "2020"
+  company: Wadhwani AI
+  url: "https://www.wadhwaniai.org"
+  description: >-
+    Helped build AI and data science solutions to predict non-adherence in TB
+    patients. <a href="https://medium.com/@muk137kumar/using-ai-to-help-tb-patients-in-india-my-internship-experience-at-wadhwani-ai-b0d59d1d67fb" rel="noopener">Wrote about the internship experience</a>.
+
+- role: Research Intern
+  when: "2019"
+  company: Trivedi Centre for Political Data
+  description: >-
+    Helped create datasets on legislators and election-related judgments.
+
+- role: B.Tech in CS, Economics & Sociology
+  when: "2017 to 2021"
+  company: IIIT Delhi
+  url: "https://iiitd.ac.in"
+  description: >-
+    Pursued an interdisciplinary program at the intersection of Computer Science,
+    Economics, and Sociology. Where I first got interested in applying ML to
+    real-world problems.
